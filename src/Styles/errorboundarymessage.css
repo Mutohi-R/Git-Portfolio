@@ -1,0 +1,72 @@
+.boundary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 50px;
+  font-family: "Kalam", cursive;
+
+}
+
+.boundary-message {
+    min-width: 900px;
+    height: 330px;
+    background-color: rgba(95, 93, 93, 0.527);
+    border-radius: 20px;
+    animation: errbound 2s;
+}
+
+.p-1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.p-2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 900;
+}
+
+.p-3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(185, 15, 15);
+}
+
+.boundary-message button {
+    margin: 0 auto;
+    margin-top: 60px;
+    display: grid;
+    place-content: center;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff67;
+}
+
+.boundary-message button:hover {
+    cursor: pointer;
+    background-color: #ffffffba;
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.small {
+    margin: 15px auto;
+    display: grid;
+    place-content: center;
+    color: blue;
+}
+
+@keyframes errbound {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

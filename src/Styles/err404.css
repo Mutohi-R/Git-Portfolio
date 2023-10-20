@@ -1,0 +1,79 @@
+.page-err {
+  display: grid;
+  place-content: center;
+  font-family: "Kalam", cursive;
+}
+
+.msg-err {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: err-msg 2s;
+}
+
+.msg-err p {
+  font-size: 2rem;
+  text-align: center;
+  color: #0c0c63;
+}
+
+.msg-err p:first-child {
+  margin-bottom: -60px;
+}
+
+.word-404 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -60px;
+  color: #0c0c63;
+}
+
+.w1,
+.w2,
+.w3 {
+  font-size: 15rem;
+}
+
+.w2 {
+  text-shadow: -5px 0px #ebe7e7;
+  margin-left: -35px;
+}
+
+.w3 {
+  text-shadow: -5px 0px #ebe7e7;
+  margin-left: -35px;
+}
+
+.err-btn {
+  width: 150px;
+  margin: 0 auto;
+  background-color: #ebe7e7;
+  color: #0c0c63;
+  border: 2px solid #333;
+  border-radius: 20px;
+  padding: 6px;
+  box-shadow: 2px 2px 2px #4b4949d3;
+}
+
+.err-btn:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: translateY(5px);
+}
+
+@keyframes err-msg {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

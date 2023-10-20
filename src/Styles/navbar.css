@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Shadows+Into+Light&display=swap");
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7px 10px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #ebe7e7;
+  animation: nav 1.5s;
+}
+
+.logo {
+  font-family: "Shadows Into Light", cursive;
+  text-decoration: underline;
+  font-weight: 900;
+  font-size: 2.2rem;
+  word-spacing: -10px;
+  color: rgb(2, 15, 71);
+  pointer-events: none;
+}
+
+.links {
+  display: flex;
+  gap: 50px;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-family: "Kalam", cursive;
+  font-weight: 500;
+  /* color: #333; */
+  color: rgb(2, 15, 71);
+  position: relative;
+}
+
+.link:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 3px;
+  width: 0;
+  background: rgb(2, 15, 71);
+  opacity: .6;
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+.link:hover:before {
+  width: 70%;
+}
+
+.link:hover {
+  transition: 0.3s;
+  transform: scale(1.02);
+}
+
+@keyframes nav {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  40% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

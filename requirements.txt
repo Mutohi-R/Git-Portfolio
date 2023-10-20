@@ -1,0 +1,8 @@
+Libraries used in the project 
+* React-icon
+* Prop-types
+
+Packages:
+* React-router-dom
+* Axios
+

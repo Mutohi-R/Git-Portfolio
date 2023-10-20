@@ -1,0 +1,190 @@
+.homepage {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-family: "Kalam", cursive;
+}
+
+.username {
+  font-size: 4.5rem;
+  font-family: "Kalam", cursive;
+  font-weight: 900;
+  animation: home1slide 1.5s forwards;
+}
+
+.user-bio {
+  font-size: 1.6rem;
+  opacity: 0;
+  animation: home1slide 1.5s forwards;
+  animation-delay: .5s;
+}
+
+.visit {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 3px 20px;
+  margin-top: 80px;
+  background-color: #ebe7e7;
+  box-shadow: 3px 4px 3px #1901019f;
+  color: #333;
+  position: relative;
+  left: -500px;
+  animation: visitslide 1.5s forwards;
+  animation-delay: 1s;
+}
+
+.visit:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: translateY(-5px);
+}
+
+.home-1 a {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-1 a:hover {
+  color: blue;
+}
+
+.visit-1:hover {
+  color: blue;
+}
+
+.visit-2:hover {
+  color: blue;
+}
+
+.visit-links {
+  display: flex;
+  gap: 30px;
+}
+
+.err404 {
+  font-size: 2rem;
+  padding: 0px 120px;
+  border-radius: 30px;
+  border: 2px solid black;
+  outline: none;
+  margin-top: 140px;
+  background-color: #ebe7e7;
+  box-shadow: 3px 3px 2px #19010169;
+  color: #333;
+  opacity: 0;
+  animation: home1slide 1.5s forwards;
+  animation-delay: 1.5s;
+}
+
+.err404:hover {
+  transition: 0.5s ease-out;
+  color: red;
+  transform: scale(1.04);
+}
+
+.home-1 {
+  animation: home1 2s;
+}
+
+.home-2 {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  /* background-color: #fde7e7; */
+  background-color: #2b2c31f0;
+  padding-bottom: 10px;
+  color: #eeeaea;
+  opacity: 0;
+  animation: home2 1.5s forwards;
+  animation-delay: 1s;
+}
+
+.pfp {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.fullname {
+  font-size: 1.5rem;
+}
+
+.user-email {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.user-location {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.user-attr {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.user-gists {
+  margin-left: 78px;
+}
+
+.user-follow {
+  margin-left: 50px;
+}
+
+@keyframes home1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes home2 {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes home1slide {
+  0% {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes visitslide {
+  0% {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
