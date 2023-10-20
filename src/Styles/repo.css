@@ -43,13 +43,11 @@
 }
 
 .attribute-1 {
-  /* border: 3px solid #fff; */
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   gap: 20px;
   padding: 20px 20px;
-  /* background-color: #fafafae5; */
   background-color: #f2f3f8;
   box-shadow: 5px 5px 3px #b4b1b1;
 }

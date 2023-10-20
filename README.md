@@ -1,8 +1,36 @@
-# React + Vite
+# My Git Repo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My GitHub portfolio made with ReactJs
 
-Currently, two official plugins are available:
+### Libraries and tools used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React-Router-Dom]
+- [React-icons]
+- [axios]
+- [prop-type]
+
+## Installation
+```bash
+npm install react-router-dom
+```
+```bash
+npm install react-icons
+```
+```bash
+npm install axios
+```
+```bash
+npm install prop-types
+```
+
+## Deployment
+
+Deployed with Netlify
+
+## Built With
+
+  - React
+
+## Author
+
+  - Mutohir
