@@ -16,8 +16,7 @@ const Repo = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    const accessToken =
-      "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";
+    const accessToken = import.meta.env.VITE_REACT_APP_GITHUB_ACCESS_TOKEN;
     const apiUrl = `https://api.github.com/repositories/${repoid}`;
     (async () => {
       try {
