@@ -200,3 +200,78 @@
     opacity: 1;
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .name {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+
+  .des {
+    font-size: 2.3rem;
+  }
+
+  .attribute-1 p {
+    font-size: 1.6rem;
+  }
+
+  .det {
+    font-size: 1.3rem;
+  }
+
+  .repo-a {
+    font-size: 1.2rem;
+  }
+
+  .back {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .attributes {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 10px;
+  }
+  .topic {
+    display: none;
+  }
+
+  .attribute-1 {
+    gap: 15px;
+  }
+
+  .attribute-2 {
+    flex-direction: row;
+    padding: 10px;
+  }
+  .repo-details {
+    min-width: 300px;
+    max-width: 400px;
+    padding-bottom: 5px;
+  }
+
+  .des {
+    display: none;
+  }
+
+  .back-btn {
+    margin-bottom: 0px;
+  }
+
+  .name {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .repo-details {
+    margin-left: -40px;
+    min-width: 330px;
+    max-width: 400px;
+  }
+
+}

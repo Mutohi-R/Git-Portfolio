@@ -36,6 +36,11 @@ nav {
   gap: 50px;
 }
 
+.links-menu {
+  gap: 50px;
+  display: none;
+}
+
 .link {
   text-decoration: none;
   font-size: 1.35rem;
@@ -53,7 +58,7 @@ nav {
   height: 3px;
   width: 0;
   background: rgb(2, 15, 71);
-  opacity: .6;
+  opacity: 0.6;
   border-radius: 50px;
   transition: width 0.3s ease;
 }
@@ -65,6 +70,49 @@ nav {
 .link:hover {
   transition: 0.3s;
   transform: scale(1.02);
+}
+
+.link1 {
+  text-decoration: none;
+  font-size: 1.35rem;
+  font-family: "Kalam", cursive;
+  font-weight: 500;
+  /* color: #333; */
+  color: rgb(2, 15, 71);
+  position: relative;
+}
+
+.link1:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 3px;
+  width: 0;
+  background: rgb(2, 15, 71);
+  opacity: 0.6;
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+.link1:hover:before {
+  width: 70%;
+}
+
+.link1:hover {
+  transition: 0.3s;
+  transform: scale(1.02);
+}
+
+
+.hamburger {
+  position: absolute;
+  top: 15px;
+  right: 15px; 
+  font-size: 1.5rem;
+  opacity: 0;
+  display: none;
+  cursor: pointer; 
+  z-index: 2; 
 }
 
 @keyframes nav {
@@ -80,5 +128,47 @@ nav {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .link {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 837px) {
+  nav {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  nav {
+    background-color: #ebe7e7;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links-menu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links {
+    display: none;
+
+  }
+
+  .hamburger {
+    display: block;
+    opacity: 1;
   }
 }

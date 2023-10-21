@@ -23,6 +23,7 @@ const Home = () => {
           },
         });
         setUser(response.data);
+        console.log(response.data)
         setIsLoading(false)
       } catch (err) {
         console.error("Error fetching data:", err);
