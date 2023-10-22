@@ -314,19 +314,3 @@
   }
 }
 
-@media only screen and (min-width: 540px) {
-
-  body {
-    padding: 0 4.5rem;
-  }
-
-  .err404 {
-    display: grid;
-    place-content: center;
-    margin: 70px auto;
-  }
-
-  .visit-links {
-    justify-content: space-between;
-  }
-}
