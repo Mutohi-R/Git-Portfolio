@@ -265,7 +265,7 @@
   }
 }
 
-@media screen and (max-width: 980px) {
+@media only screen and (max-width: 980px) {
 
   .user-location {
     margin-bottom: 30px;
@@ -276,14 +276,14 @@
   }
 }
 
-@media screen and (max-width: 820px) {
+@media only screen and (max-width: 820px) {
   .err404 {
     padding: 0px 80px;
   }
 
 }
 
-@media screen and (max-width: 650px) {
+@media only screen and (max-width: 650px) {
   .homepage {
     flex-direction: column;
   }
@@ -291,5 +291,42 @@
   .home-2 {
     margin: 0 auto;
     width: 300px;
+  }
+}
+
+@media only screen and (max-width: 417px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .err404 {
+    display: grid;
+    place-content: center;
+    margin: 70px auto;
+  }
+
+  .visit-links {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 540px) {
+
+  body {
+    padding: 0 4.5rem;
+  }
+
+  .err404 {
+    display: grid;
+    place-content: center;
+    margin: 70px auto;
+  }
+
+  .visit-links {
+    justify-content: space-between;
   }
 }

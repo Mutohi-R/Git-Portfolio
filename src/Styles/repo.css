@@ -201,7 +201,7 @@
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media only screen and (min-width: 1400px) {
   .name {
     font-size: 3.5rem;
     margin-bottom: 20px;
@@ -228,7 +228,7 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .attributes {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -267,7 +267,7 @@
   }
 }
 
-@media screen and (max-width: 650px) {
+@media only screen and (max-width: 650px) {
   .repo-details {
     margin-left: -40px;
     min-width: 330px;
