@@ -303,6 +303,10 @@
     width: 100%;
   }
 
+  .home-2 {
+    margin-bottom: 20px;
+  }
+
   .err404 {
     display: grid;
     place-content: center;

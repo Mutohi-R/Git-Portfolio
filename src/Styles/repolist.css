@@ -192,3 +192,9 @@ hr {
     grid-template-columns: auto;
     }
 }
+
+@media only screen and (max-width: 417px) {
+  .repo-box {
+    padding-bottom: 20px;
+  }
+}
