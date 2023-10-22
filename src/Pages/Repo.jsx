@@ -66,7 +66,7 @@ const Repo = () => {
               <FaStar className="star" /> {repo.stargazers_count || 0}
             </p>
             <p className="icon ic2"><FaCodeBranch className="branch" /> {repo.forks_count || 0}</p>
-            <p className="lang-icon" style={repo.language == 'JavaScript' ? {backgroundColor:'#ffe680'} : repo.language == 'HTML' ? {backgroundColor:'#ff9980'} : repo.language == 'CSS' ? {backgroundColor:'#c299ff'} : {backgroundColor:'#333'}}>{repo.language || "Null"}</p>
+            <p className="lang-icon" style={repo.language == 'JavaScript' ? {backgroundColor:'#ffe680'} : repo.language == 'HTML' ? {backgroundColor:'#ff9980'} : repo.language == 'CSS' ? {backgroundColor:'#c299ff'} : {color:'#fafafae5',backgroundColor:'#333'}}>{repo.language || "Null"}</p>
           </div>
         </aside>
       </article>

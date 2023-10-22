@@ -14,10 +14,6 @@
   animation-delay: 1s;
 }
 
-.repo-details-page {
-  padding: 0 40px;
-}
-
 .repo-details {
   border: 5px solid #fff;
   border-radius: 20px;
@@ -168,6 +164,8 @@
   margin-top: 10px;
   background-color: #98a5d2f0;
   box-shadow: 3px 3px 2px #33333390;
+  display: grid;
+  place-content: center;
 }
 
 .back {
@@ -274,4 +272,16 @@
     max-width: 400px;
   }
 
+}
+
+@media only screen and (max-width: 417px) {
+
+  .repo-details {
+    margin: 0 auto;
+  }
+  
+  .back-btn {
+    margin: 10px auto;
+    width: 100px;
+  }
 }
