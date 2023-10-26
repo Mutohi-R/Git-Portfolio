@@ -1,15 +1,13 @@
-import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import PropTypes from 'prop-types'
 import { FaBars, FaMoon, FaSun } from "react-icons/fa";
 
 import "./Styles/navbar.css";
+import { useState } from "react";
 
-const NavBar = ({isDarkMode, toggleDarkMode}) => {
+const NavBar = ({isDarkMode, toggleDarkMode }) => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)

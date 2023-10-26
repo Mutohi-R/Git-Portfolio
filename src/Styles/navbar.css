@@ -323,8 +323,9 @@
   }
 
   .mode {
-    top: 64px;
-    right: 25px;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
   }
 }
 
