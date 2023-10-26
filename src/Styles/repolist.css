@@ -23,6 +23,7 @@ hr {
 
 .repo-page {
   padding: 0 40px;
+  padding-bottom: 30px;
 }
 
 .repo-box {
@@ -51,10 +52,33 @@ hr {
   box-shadow: 5px 5px 2px 1px #393f8654;
 }
 
+.repo-dark {
+  border-radius: 20px;
+  /* background-color: #fde7e7; */
+  box-shadow: 2px 2px 5px 1px #644489a0;
+  border: 5px solid #3d2756;
+  background-color: #352745;
+  height: 20rem;
+  min-width: 19rem;
+  max-width: 24rem;
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* box-shadow:  -7px 7px 16px #a7a2a2,
+             7px -7px 16px #e3dcdc; */
+}
+
 .repo:hover {
   transition: 0.5s;
   transform: scale(1.01);
   box-shadow: -8px 8px 13px #3c2d79ab, 4px -8px 13px #858ef157;
+}
+
+.repo-dark:hover {
+  transition: 0.5s;
+  transform: scale(1.01);
+  box-shadow: -8px 8px 13px #4f1570ab, 3px -8px 13px #33053f57;
 }
 
 .repo-name {

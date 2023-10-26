@@ -11,7 +11,8 @@
 .boundary-message {
     width: 900px;
     height: 330px;
-    background-color: rgba(95, 93, 93, 0.527);
+    /* background-color: rgba(95, 93, 93, 0.527); */
+    background-color: #352745;
     border-radius: 20px;
     animation: errbound 2s;
 }
@@ -21,6 +22,14 @@
     font-size: 3rem;
     text-align: center;
     font-weight: 900;
+}
+
+.p-1-dark {
+    margin-top: 15px;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 900;
+    color: #eeeaea;
 }
 
 .p-2 {

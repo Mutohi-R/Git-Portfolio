@@ -15,8 +15,11 @@ class ErrorBoundary extends Component {
   }
 
   render() {
+
+    const { isDarkMode } = this.props
+
     if (this.state.hasError) {
-      return <ErrorBoundaryMessage error={this.state.error} />;
+      return <ErrorBoundaryMessage error={this.state.error} isDarkMode={isDarkMode}/>;
     }
     return <Outlet />;
   }

@@ -12,6 +12,15 @@ html {
   height: 100%;
 }
 
+:root {
+  --dark-purple: #2d0e44;
+  --regular-purple: #AD01C3;
+  /* --light-purple: #9F72D4; */
+  --light-purple: #684294;
+  --dark-blue: #13005A;
+  --dull-blue: #064994;
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
