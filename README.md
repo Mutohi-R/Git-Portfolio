@@ -11,16 +11,7 @@ My GitHub portfolio made with ReactJs
 
 ## Installation
 ```bash
-npm install react-router-dom
-```
-```bash
-npm install react-icons
-```
-```bash
-npm install axios
-```
-```bash
-npm install prop-types
+npm install
 ```
 
 ## Deployment
